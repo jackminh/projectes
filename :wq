@@ -6,7 +6,6 @@
             "email": "646395329@qq.com"
         }
     ],
-	"version":"1.0.0",
 	"autoload":{
 		"classmap":[
 			"app/libararies/"	
