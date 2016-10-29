@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'app\\libararies\\Calculator' => $baseDir . '/app/libararies/Calculator.php',
-    'app\\libararies\\IAcmePrototype' => $baseDir . '/app/libararies/IAcmeprototype.php',
+    'App\\libraries\\Calculator' => $baseDir . '/app/libraries/Calculator.php',
+    'App\\libraries\\IAcmePrototype' => $baseDir . '/app/libraries/IAcmeprototype.php',
+    'App\\modules\\Logger' => $baseDir . '/app/modules/Logger.php',
+    'App\\modules\\Registry' => $baseDir . '/app/modules/Registry.php',
 );

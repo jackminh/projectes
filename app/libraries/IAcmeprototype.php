@@ -1,5 +1,5 @@
 <?php
-	namespace app\libararies;;
+	namespace App\libraries;
 	abstract class IAcmePrototype{
 		protected $name;
 		protected $id;

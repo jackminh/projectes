@@ -9,7 +9,8 @@
 	"version":"1.0.0",
 	"autoload":{
 		"classmap":[
-			"app/libararies/"	
+			"app/libraries/",
+			"app/modules"
 			],
 		"files":[
 			"src/library/functions.php"

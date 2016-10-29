@@ -11,8 +11,10 @@ class ComposerStaticInit700e0c776944ce208701278af31bbf6b
     );
 
     public static $classMap = array (
-        'app\\libararies\\Calculator' => __DIR__ . '/../..' . '/app/libararies/Calculator.php',
-        'app\\libararies\\IAcmePrototype' => __DIR__ . '/../..' . '/app/libararies/IAcmeprototype.php',
+        'App\\libraries\\Calculator' => __DIR__ . '/../..' . '/app/libraries/Calculator.php',
+        'App\\libraries\\IAcmePrototype' => __DIR__ . '/../..' . '/app/libraries/IAcmeprototype.php',
+        'App\\modules\\Logger' => __DIR__ . '/../..' . '/app/modules/Logger.php',
+        'App\\modules\\Registry' => __DIR__ . '/../..' . '/app/modules/Registry.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
