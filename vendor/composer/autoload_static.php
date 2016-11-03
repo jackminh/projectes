@@ -7,19 +7,109 @@ namespace Composer\Autoload;
 class ComposerStaticInit700e0c776944ce208701278af31bbf6b
 {
     public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'b4af729c7e6b634df6e1b8572e5b94c4' => __DIR__ . '/../..' . '/src/library/functions.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\Debug\\' => 24,
+            'Symfony\\Component\\Console\\' => 26,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
+            'Doctrine\\Common\\' => 16,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Yaml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'D' => 
+        array (
+            'Doctrine\\ORM\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/orm/lib',
+            ),
+            'Doctrine\\DBAL\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/dbal/lib',
+            ),
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+            'Doctrine\\Common\\Inflector\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
+            ),
+            'Doctrine\\Common\\Collections\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/collections/lib',
+            ),
+        ),
     );
 
     public static $classMap = array (
         'App\\libraries\\Calculator' => __DIR__ . '/../..' . '/app/libraries/Calculator.php',
         'App\\libraries\\IAcmePrototype' => __DIR__ . '/../..' . '/app/libraries/IAcmeprototype.php',
+        'App\\models\\factory\\Creator' => __DIR__ . '/../..' . '/app/models/factory/Creator.php',
+        'App\\models\\factory\\Product' => __DIR__ . '/../..' . '/app/models/factory/Product.php',
+        'App\\models\\factory\\TextFactory' => __DIR__ . '/../..' . '/app/models/factory/TextFactory.php',
+        'App\\models\\factory\\TextProduct' => __DIR__ . '/../..' . '/app/models/factory/TextProduct.php',
         'App\\modules\\Logger' => __DIR__ . '/../..' . '/app/modules/Logger.php',
         'App\\modules\\Registry' => __DIR__ . '/../..' . '/app/modules/Registry.php',
+        'App\\modules\\handler\\TestHandler' => __DIR__ . '/../..' . '/app/modules/handler/TestHandler.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit700e0c776944ce208701278af31bbf6b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit700e0c776944ce208701278af31bbf6b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit700e0c776944ce208701278af31bbf6b::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit700e0c776944ce208701278af31bbf6b::$classMap;
 
         }, null, ClassLoader::class);

@@ -8,6 +8,11 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\libraries\\Calculator' => $baseDir . '/app/libraries/Calculator.php',
     'App\\libraries\\IAcmePrototype' => $baseDir . '/app/libraries/IAcmeprototype.php',
+    'App\\models\\factory\\Creator' => $baseDir . '/app/models/factory/Creator.php',
+    'App\\models\\factory\\Product' => $baseDir . '/app/models/factory/Product.php',
+    'App\\models\\factory\\TextFactory' => $baseDir . '/app/models/factory/TextFactory.php',
+    'App\\models\\factory\\TextProduct' => $baseDir . '/app/models/factory/TextProduct.php',
     'App\\modules\\Logger' => $baseDir . '/app/modules/Logger.php',
     'App\\modules\\Registry' => $baseDir . '/app/modules/Registry.php',
+    'App\\modules\\handler\\TestHandler' => $baseDir . '/app/modules/handler/TestHandler.php',
 );
